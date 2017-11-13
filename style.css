@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    font-family: 'PT Serif', serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 40px;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin-top: .3em;
+}
+
+main {
+    flex: 2 1;
+}
+
+main p {
+    max-width: 768px;
+    font-size: 1.2em;
+}
+
+hr {
+    border-top: 3px solid royalblue;
+    max-width: 768px;
+    margin: 0;
+}
+
+aside {
+    order: -1;
+    margin: 0 40px 40px 0;
+    max-width: 400px;
+    flex: 1 1;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+footer,
+.photo-grid,
+.contact {
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.contact .cognito {
+    max-width: 800px;
+    margin: 12px auto;
+}
+
+@media only screen and (max-width: 768px) {
+    main,
+    aside {
+        flex: 1 0 100%;
+        width: 100%;
+    }
+}
+
+footer {
+    font-size: .85em;
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+.photo-grid {
+    margin: 0 -40px 0;
+    background: #242424;
+    padding: 20px;
+    column-gap: 20px;
+    width: 100vw;
+}
+
+.photo-grid img {
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 512px) {
+    .photo-grid {
+        column-count: 2;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .photo-grid {
+        column-count: 3;
+    }
+}
+
+body.konami * {
+    display: none;
+}
+
+body.konami::before {
+    content: 'rip father dad';
+    display: block;
+}
+
+body.konami::after {
+    content: '';
+    display: block;
+    padding-top: 69.5%;
+    width: 100%;
+    background: url(konami.jpg);
+    background-size: cover;
+}
+
+.cognito *:not(textarea) {
+    font-family: inherit !important;
+}
