@@ -107,6 +107,10 @@ footer {
     }
 }
 
+body.konami {
+    display: block;
+}
+
 body.konami * {
     display: none;
 }
