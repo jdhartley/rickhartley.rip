@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+[hidden] {
+    display: none;
+}
+
 *::before,
 *::after {
     box-sizing: inherit;
@@ -13,6 +17,15 @@ html {
     font-weight: 400;
     line-height: 1.4;
     -webkit-font-smoothing: antialiased;
+    color: #242424;
+}
+
+a {
+    color: royalblue;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 body {
@@ -37,6 +50,13 @@ main {
 main p {
     max-width: 768px;
     font-size: 1.2em;
+}
+
+main p svg {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
 }
 
 hr {
