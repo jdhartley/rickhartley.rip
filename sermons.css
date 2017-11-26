@@ -33,6 +33,11 @@
     flex-shrink: 0;
 }
 
+.sermon-list cite {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
 .sermon-list time:last-of-type {
     margin-left: auto;
     padding-left: 1em;
@@ -66,6 +71,20 @@ aside {
 
 aside .plyr {
     margin-top: 30px;
+}
+
+@media
+    only screen and (max-width: 600px),
+    only screen and (min-width: 768px) and (max-width: 1024px) {
+    .sermon-list > li {
+        flex-wrap: wrap;
+    }
+
+    .sermon-list cite {
+        order: -1;
+        flex-basis: 100%;
+        margin-bottom: .3em;
+    }
 }
 
 @media only screen and (max-width: 768px) {
