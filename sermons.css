@@ -3,7 +3,7 @@ hr {
 }
 
 .sermon-list {
-    margin: 40px -1em 0;
+    margin: 40px -1em;
     width: calc(100% + 2em);
     padding: 0;
     list-style: none;
