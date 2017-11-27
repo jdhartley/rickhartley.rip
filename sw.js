@@ -28,11 +28,15 @@ const PRECACHE_URLS = [
     './images/wedding.jpg',
 ];
 
+const RUNTIME_BLACKLIST = [
+    'sermons.html',
+]
+
 // Names of the two caches used in this version of the service worker.
 // Change to v2, etc. when you update any of the local resources, which will
 // in turn trigger the install event again.
-const PRECACHE = 'precache-v1';
-const RUNTIME = 'runtime';
+const PRECACHE = 'precache-v2';
+const RUNTIME = 'runtime-v2';
 
 // The install handler takes care of precaching the resources we always need.
 self.addEventListener('install', event => {
@@ -64,6 +68,10 @@ self.addEventListener('activate', event => {
 self.addEventListener('fetch', event => {
     // Skip cross-origin requests, like those for Google Analytics.
     if (!event.request.url.startsWith(self.location.origin)) {
+        return;
+    }
+
+    if (RUNTIME_BLACKLIST.some((url) => event.request.url.endsWith(url))) {
         return;
     }
 
