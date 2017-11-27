@@ -36,7 +36,7 @@ const RUNTIME_BLACKLIST = [
 // Change to v2, etc. when you update any of the local resources, which will
 // in turn trigger the install event again.
 const PRECACHE = 'precache-v2';
-const RUNTIME = 'runtime';
+const RUNTIME = 'runtime-v2';
 
 // The install handler takes care of precaching the resources we always need.
 self.addEventListener('install', event => {
