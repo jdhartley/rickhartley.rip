@@ -49,6 +49,7 @@
     margin-left: calc(1em - 5px);
     padding: 5px;
     text-decoration: none;
+    max-height: 36px;
 }
 
 .sermon-list > .is-active a {
