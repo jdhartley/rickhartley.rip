@@ -70,6 +70,28 @@ aside {
     margin: 0 40px 40px 0;
     max-width: 400px;
     flex: 1 1;
+    position: relative;
+}
+
+.birthday::before {
+    content: '';
+    display: block;
+    width: 41.25vw;
+    height: 61.87vw;
+    background: url(birthday.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 17.79vw;
+    top: -16.58vw;
+}
+
+@media only screen and (min-width: 480px) {
+    .birthday::before {
+        width: 198px;
+        height: 297px;
+        left: 95px;
+        top: -70px;
+    }
 }
 
 img {
