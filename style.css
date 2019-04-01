@@ -100,15 +100,9 @@ img {
 }
 
 footer,
-.photo-grid,
-.contact {
+.photo-grid {
     flex-shrink: 0;
     width: 100%;
-}
-
-.contact .cognito {
-    max-width: 800px;
-    margin: 12px auto;
 }
 
 @media only screen and (max-width: 768px) {
@@ -126,7 +120,7 @@ footer {
 }
 
 .photo-grid {
-    margin: 0 -40px 0;
+    margin: 0 -40px -40px;
     background: #242424;
     padding: 20px;
     column-gap: 20px;
@@ -169,8 +163,4 @@ body.konami::after {
     width: 100%;
     background: url(konami.jpg);
     background-size: cover;
-}
-
-.cognito *:not(textarea) {
-    font-family: inherit !important;
 }

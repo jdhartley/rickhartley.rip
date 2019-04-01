@@ -36,7 +36,7 @@ const RUNTIME_BLACKLIST = [
 // Names of the two caches used in this version of the service worker.
 // Change to v2, etc. when you update any of the local resources, which will
 // in turn trigger the install event again.
-const PRECACHE = 'precache-v4';
+const PRECACHE = 'precache-v5';
 const RUNTIME = 'runtime-v4';
 
 // The install handler takes care of precaching the resources we always need.
