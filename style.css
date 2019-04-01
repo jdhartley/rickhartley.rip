@@ -94,6 +94,15 @@ aside {
     }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1287px) {
+    .birthday::before {
+        width: 15.37267081vw;
+        height: 23.05900621vw;
+        left: 7.375776398vw;
+        top: -5.434782609vw;
+    }
+}
+
 img {
     display: block;
     max-width: 100%;
