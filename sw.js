@@ -10,6 +10,7 @@ const PRECACHE_URLS = [
     'https://fonts.googleapis.com/css?family=PT+Serif:400,700',
     './rick.jpg',
     './birthday.png',
+    './santa.png',
     './images/airport-rick.jpg',
     './images/best-friends.jpg',
     './images/chicago.jpg',
@@ -31,13 +32,13 @@ const PRECACHE_URLS = [
 
 const RUNTIME_BLACKLIST = [
     'sermons.html',
-]
+];
 
 // Names of the two caches used in this version of the service worker.
 // Change to v2, etc. when you update any of the local resources, which will
 // in turn trigger the install event again.
-const PRECACHE = 'precache-v5';
-const RUNTIME = 'runtime-v4';
+const PRECACHE = 'precache-v6';
+const RUNTIME = 'runtime-v5';
 
 // The install handler takes care of precaching the resources we always need.
 self.addEventListener('install', event => {

@@ -85,12 +85,31 @@ aside {
     top: -16.58vw;
 }
 
+.santa::before {
+    content: '';
+    display: block;
+    width: 51.56vw;
+    height: 39.58vw;
+    background: url(santa.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 7.79vw;
+    top: 1.42vw;
+}
+
 @media only screen and (min-width: 480px) {
     .birthday::before {
         width: 198px;
         height: 297px;
         left: 95px;
         top: -70px;
+    }
+
+    .santa::before {
+        width: 248px;
+        height: 190px;
+        left: 34px;
+        top: 20px;
     }
 }
 
@@ -100,6 +119,13 @@ aside {
         height: 23.05900621vw;
         left: 7.375776398vw;
         top: -5.434782609vw;
+    }
+
+    .santa::before {
+        width: 19.2158vw;
+        height: 14.7496vw;
+        left: 2.375776vw;
+        top: 0.565217vw;
     }
 }
 

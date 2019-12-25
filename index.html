@@ -52,7 +52,7 @@
     </div>
 
     <script>if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js')</script>
-    <script>!function (n, o, i, k) { n.onkeydown = function (t) { o.push(t.which || t.keyCode), o.toString().indexOf(i) >= 0 && (n.body.classList.add('konami')), o.toString().indexOf(k) >= 0 && (n.querySelector('aside').classList.add('birthday')) } }(document, [], "38,38,40,40,37,39,37,39,66,65", "66,73,82,84,72,68,65,89");</script>
-    <script>var today = new Date(); if (today.getMonth() === 8 && today.getDate() === 1) document.querySelector('aside').classList.add('birthday')</script>
+    <script>!function (n, o, i, k, s) { n.onkeydown = function (t) { o.push(t.which || t.keyCode), o.toString().indexOf(i) >= 0 && (n.body.classList.add('konami')), o.toString().indexOf(k) >= 0 && (n.querySelector('aside').classList.add('birthday')), o.toString().indexOf(s) >= 0 && (n.querySelector('aside').classList.add('santa')) } }(document, [], "38,38,40,40,37,39,37,39,66,65", "66,73,82,84,72,68,65,89", "83,65,78,84,65");</script>
+    <script>var today = new Date(); if (today.getMonth() === 8 && today.getDate() === 1) document.querySelector('aside').classList.add('birthday'); if (today.getMonth() === 11 && today.getDate() === 25) document.querySelector('aside').classList.add('santa')</script>
 </body>
 </html>
